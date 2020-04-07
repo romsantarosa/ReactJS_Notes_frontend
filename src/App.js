@@ -1,12 +1,12 @@
 import React from 'react';
 import { Notification, Section } from 'rbx'
 import './App.scss'
-import HomeScreen from './screens/home'
+import Routes from './routes'
 
 
 const App = () => (
 <>
-<HomeScreen/>
+<Routes/>
 </>
 )
 

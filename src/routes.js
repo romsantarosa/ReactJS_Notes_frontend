@@ -6,6 +6,7 @@ import Register from './screens/auth/register'
 import Login from './screens/auth/login'
 import NotesIndex from './screens/notes/index'
 import UserEdit from './screens/users/edit'
+import PrivateRouter from './components/auth/private_router'
 
 const Routes = () => (
   <BrowserRouter>
@@ -13,8 +14,8 @@ const Routes = () => (
       <Route exact path='/' component={Home} />
       <Route exact path='/register' component={Register} />
       <Route exact path='/login' component={Login} />
-      <Route exact path='/notes' component={NotesIndex} />
-      <Route exact path='/users/edit' component={UserEdit} />
+      <PrivateRouter exact path='/notes' component={NotesIndex} />
+      <PrivateRouter exact path='/users/edit' component={UserEdit} />
     </Switch>
   </BrowserRouter>
 )

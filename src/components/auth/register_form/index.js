@@ -3,6 +3,7 @@ import { Button, Field, Label, Control, Input, Column, Section, Help } from 'rbx
 import { Redirect } from 'react-router-dom'
 import UsersService from '../../../services/users'
 
+
 function RegisterForm() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
